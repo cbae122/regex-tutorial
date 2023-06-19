@@ -87,6 +87,15 @@ In the above example we can see () being used multiple times. We have three spec
 
 ### Bracket Expressions
 
+Bracket expressions are characters inside a set of square brackets [] that represent a range of characters we want to match.
+
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+
+In the above example we can see [] being used multiple times. [a-z0-9_\.-] this example is stating that the users input can contain the following - letters a-z, numbers 0-9, an underscore, hyphen, or period.
+
+
 ### Greedy and Lazy Match
 
 ### Boundaries
