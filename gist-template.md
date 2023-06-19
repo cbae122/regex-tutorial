@@ -41,6 +41,7 @@ Matching an Email:
 ## Regex Components
 
 ### Anchors
+
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
@@ -58,7 +59,6 @@ In between these two anchors is the code we are using to make sure the user is i
 ### Quantifiers
 
 Quantifiers are charcters in the regex that specifiy how many times a character, group, or class must be represented in the users input to be matched.
-
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
@@ -69,7 +69,6 @@ In the above example we can see ([a-z0-9_\.-]+) is stating that the user can use
 ### Character Classes
 
 Character classes in a regex defines a set of characters, anyone of which can occur in an input string to fulfill a match.
-
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
@@ -78,9 +77,13 @@ In the above example we can see ([\da-z\.-]+)
 
 The \d character matches any Arabic numeral digit. This is the same as [0-9] we saw in the first portion of our regex.
 
-### Flags
-
 ### Grouping and Capturing
+
+Grouping allows us to breakdown our regular expressions in to multuple parts of strings to determine that difference sections fulfill different requirements.
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+In the above example we can see () being used multiple times. We have three specific groups, these groups are looking for specific input. ([a-z\.]{2,6}) is looking for an a-z input along with . and must be 2 to 6 characters in length. This is one out of the three groupings we have in our email regex.
 
 ### Bracket Expressions
 
