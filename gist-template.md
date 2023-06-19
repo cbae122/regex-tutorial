@@ -57,6 +57,14 @@ In between these two anchors is the code we are using to make sure the user is i
 
 ### Quantifiers
 
+Quantifiers are charcters in the regex that specifiy how many times a character, group, or class must be represented in the users input to be matched.
+
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+
+In the above example we can see ([a-z0-9_\.-]+) is stating that the user can use any letter a-z and any number 0-9 and the following characters _, \, ., -. The + is a quantifier. This means that the users input must contain at least one mentioned criterias.
+
 
 ### OR Operator
 
