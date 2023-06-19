@@ -41,8 +41,22 @@ Matching an Email:
 ## Regex Components
 
 ### Anchors
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+In the above example of the email regex you will see ^ and $. 
+
+These two are called anchors. 
+
+The ^ anchor signifies the beginning of our string.
+
+The $ anchor signifies the end of our string. 
+
+In between these two anchors is the code we are using to make sure the user is inputing the valid format for their email.
+
 
 ### Quantifiers
+
 
 ### OR Operator
 
