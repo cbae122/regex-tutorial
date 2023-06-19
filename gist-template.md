@@ -66,9 +66,17 @@ Quantifiers are charcters in the regex that specifiy how many times a character,
 In the above example we can see ([a-z0-9_\.-]+) is stating that the user can use any letter a-z and any number 0-9 and the following characters _, \, ., -. The + is a quantifier. This means that the users input must contain at least one mentioned criterias.
 
 
-### OR Operator
-
 ### Character Classes
+
+Character classes in a regex defines a set of characters, anyone of which can occur in an input string to fulfill a match.
+
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+
+In the above example we can see ([\da-z\.-]+)
+
+The \d character matches any Arabic numeral digit. This is the same as [0-9] we saw in the first portion of our regex.
 
 ### Flags
 
