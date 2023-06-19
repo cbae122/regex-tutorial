@@ -98,11 +98,7 @@ In the above example we can see [] being used multiple times. [a-z0-9_\.-] this 
 
 ### Greedy and Lazy Match
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Our email regex contains two greedy matches. We have the + quantifier that will try to match it as many times possible. We also have the {} curly brackets that will match the pattern from a minimum number of times to a maximum number of times.
 
 ## Author
 
